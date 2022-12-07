@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style-navbar.css">
+    <title>LoLStats</title>
+    <link rel="stylesheet" href="/Styles/style-navbar.css">
+    <link rel="stylesheet" href="/Styles/style-searchbar.css">
 </head>
 <body>
     <header>
         <nav>
-            <a class="logo">Projeto</a>
+            <a class="logo">LoLStats</a>
             <div class="mobile-menu">
                 <div class="line1"></div>
                 <div class="line2"></div>
@@ -27,13 +28,13 @@
     <main>
         <div class="search-box">
             <h1>Search SumenerName</h1>
-            <form>
+            <form id="form-sumuner">
                 <input id="text" type="text" name="" placeholder="Type...">
-                <input type="submit" name="" value="Search">
+                <input id="submit" type="submit" name="" value="Search">
             </form>
         </div>
-    </main>
-    <script src="mobile-navbar.js"></script>
-    <script src="api-riot-games.js"></script>
+    </main> 
+    <script src="/Scripts/mobile-navbar.js"></script>
+    <script src="/Scripts/api-riot-games.js"></script>
 </body>
 </html>
