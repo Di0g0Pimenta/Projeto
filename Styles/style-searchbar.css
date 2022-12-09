@@ -16,8 +16,8 @@
 
   .search-box input {
     position: relative;
-    display:  inline-block;
-    font-size: 20px;
+    display: inline-block;
+    font-size: 14px;
     box-sizing: border-box;
     transition: 0.5s;
   }
@@ -31,7 +31,7 @@
     border-radius: 25px 0 0 25px;
   }
 
-  .search-box input[type = "submit"] {
+  .search-box button[type = "submit"] {
     position: relative;
     left: -5px;
     border-radius: 0 25px 25px 0;
@@ -44,6 +44,6 @@
     color: black;
   }
 
-  .search-box input[type = "submit"]:hover {
+  .search-box button[type = "submit"]:hover {
     background: #95C623;
   }
