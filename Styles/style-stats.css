@@ -1,0 +1,9 @@
+.stats {
+    background-color: rgb(26, 67, 129);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 800px;
+    height: 400px;
+    transform: translate(-50%,-50%);
+}
