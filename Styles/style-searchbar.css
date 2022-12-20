@@ -47,3 +47,12 @@
   .search-box button[type = "submit"]:hover {
     background: #95C623;
   }
+
+  #erro {
+    color: rgb(255, 38, 0);
+    font-family: Impact,sans-serif;
+    font-size: 15px;
+    padding: 30px;
+    text-align: center;
+    
+  }

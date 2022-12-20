@@ -11,17 +11,17 @@
 <body>
     <header>
         <nav>
-            <a class="logo">LoLStats</a>
+            <a class="logo" href="http://127.0.0.1:5500/Main%20Page/Index-main.html">LoLStats</a>
             <div class="mobile-menu">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
             <ul class="nav-list">
-                <li><a href="http://127.0.0.1:5500/Main%20Page/Index-main.html">Inicio</a></li>
+                <li><a href="http://127.0.0.1:5500/Main%20Page/Index-main.html">Home</a></li>
                 <li><a href="http://127.0.0.1:5500/Tier%20List%20Page/index-tierlist.html">Tier List</a></li>
                 <li><a href="/">Champions</a></li>
-                <li><a href="/">Quem Somos</a></li>
+                <li><a href="/">About</a></li>
             </ul>
         </nav>
     </header>
@@ -29,9 +29,12 @@
         <div class="search-box">
             <h1>Search SumenerName</h1>
             <form id="form-sumuner" onsubmit="submition(event)">
-                <input id="text" type="text" name="" placeholder="Type..." onclick="checkNickName()" required>
+                <input id="text" type="text" name="" placeholder="Type..." required>
                 <button id="submit" type="submit" name="" value="Search">Search</button>
             </form>
+            <div>
+                <p id="erro"></p>
+            </div>
         </div>
     </main> 
     <script src="/Scripts/mobile-navbar.js"></script>

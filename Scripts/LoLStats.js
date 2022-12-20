@@ -1,5 +1,4 @@
-let key = "a753563a18msh7a9137445add32bp1cbbd4jsn380619d2fca7";
-let urlAPI = "rapidapi.com";
+/*
 const options = {
 	method: 'GET',
 	headers: {
@@ -8,7 +7,8 @@ const options = {
 	}
 };
 
-fetch('https://league-of-legends-stats.p.rapidapi.com/champions', options)
+fetch('https://league-of-legends-stats.p.rapidapi.com/champions/ekko/stats', options)
 	.then(response => response.json())
 	.then(response => console.log(response))
 	.catch(err => console.error(err));
+	*/
