@@ -1,3 +1,11 @@
+body {
+    background-size: cover;
+    height: 100vh;
+    background: url(/image/thumb-1920-613663.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
 .stats {
     background-color: rgb(26, 67, 129);
     position: absolute;

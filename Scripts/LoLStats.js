@@ -1,3 +1,15 @@
+//console.log(localStorage.getItem("name"))
+document.getElementById("nickName").innerHTML = localStorage.getItem("name")
+document.getElementById("level").innerHTML = localStorage.getItem("level")
+
+
+function back() {
+    location.href = "http://127.0.0.1:5500/Main%20Page/Index-main.html"
+}
+
+
+
+
 /*
 const options = {
 	method: 'GET',
