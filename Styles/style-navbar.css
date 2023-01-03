@@ -79,11 +79,23 @@
     .nav-list li {
       margin-left: 0;
       opacity: 0;
+      font-size: 14px;
+      letter-spacing: 2px;
+    }
+    .logo {
+      font-size: 20px;
     }
     .mobile-menu {
       display: block;
     }
   }
+
+  @media (min-width: 1000px) {
+    .nav-list {
+      flex-direction: row;
+    }
+  }
+  
   
   .nav-list.active {
     transform: translateX(0);

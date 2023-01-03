@@ -1,4 +1,4 @@
-let key = "?api_key=RGAPI-5afe2c63-d9bb-4420-9f38-ab92891144ca";
+let key = "?api_key=RGAPI-78dd43dc-871b-493d-a090-a269f1c29793";
 let urlAPI = "https://euw1.api.riotgames.com/lol/summoner/v4/summoners/by-name/";
 let form = document.getElementById('form-sumuner');
 let sumenerName = document.getElementById('text');

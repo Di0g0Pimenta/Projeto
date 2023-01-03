@@ -8,6 +8,7 @@ class MobileNavbar {
     this.handleClick = this.handleClick.bind(this);
   }
 
+  //animateLinks: anima os links na barra de navegação.
   animateLinks() {
     this.navLinks.forEach((link, index) => {
       link.style.animation
@@ -18,16 +19,19 @@ class MobileNavbar {
     });
   }
 
+  //handleClick – manipula o evento click no menu móvel e aplica ou remove a classe "ativa" à lista de links e ao menu móvel.
   handleClick() {
     this.navList.classList.toggle(this.activeClass);
     this.mobileMenu.classList.toggle(this.activeClass);
     this.animateLinks();
   }
 
+  //addClickEvent: añade un evento de clic al menú móvil.
   addClickEvent() {
     this.mobileMenu.addEventListener("click", this.handleClick);
   }
 
+  //init – Inicializa a barra de navegação móvel.
   init() {
     if (this.mobileMenu) {
       this.addClickEvent();

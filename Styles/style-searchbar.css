@@ -1,58 +1,79 @@
 .search-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 500px;
-    transform: translate(-50%,-50%);
-  }
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
 
-  .search-box h1 {
-    font-family: sans-serif;
-    color: #F4AC45;
-    font-size: 24px;
-    margin: 0 0 10px;
-    padding: 0;
-  }
+.search-box h1 {
+  margin: 0 0 10px;
+  font-size: 22px;
+  font-family: sans-serif;
+  color: #F4AC45;
+}
 
-  .search-box input {
-    position: relative;
-    display: inline-block;
+.search-box form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 340px;
+  margin: 0 0 20px;
+}
+
+.search-box form input {
+  flex: 1;
+  height: 50px;
+  font-size: 16px;
+  border: none;
+  padding: 0 25px;
+  border-radius: 25px 0 0 25px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.search-box form button {
+  width: 150px;
+  height: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #F4AC45;
+  color: black;
+  border-radius: 0 25px 25px 0;
+}
+
+.search-box form button:hover {
+  background: #95C623;
+}
+
+.search-box div p {
+  margin: 0;
+  font-size: 14px;
+  color: #f00;
+  font-family: Impact,sans-serif;
+  text-align: center;
+  padding: 30px;
+}
+
+@media (max-width: 600px) {
+  .search-box {
+    flex-direction: column;
+  }
+  .search-box form input {
+    width: 90%;
     font-size: 14px;
-    box-sizing: border-box;
-    transition: 0.5s;
   }
-  
-  .search-box input[type = "text"] {
-    width: 340px;
-    height: 50px;
-    border: none;
-    
-    padding: 0 25px;
-    border-radius: 25px 0 0 25px;
+  .search-box form button {
+    width: 100px;
   }
-
-  .search-box button[type = "submit"] {
-    position: relative;
-    left: -5px;
-    border-radius: 0 25px 25px 0;
-    width: 150px;
-    height: 50px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    background-color: #F4AC45;
-    color: black;
-  }
-
-  .search-box button[type = "submit"]:hover {
-    background: #95C623;
-  }
-
-  #erro {
-    color: rgb(255, 38, 0);
-    font-family: Impact,sans-serif;
-    font-size: 15px;
-    padding: 30px;
-    text-align: center;
-    
-  }
+}

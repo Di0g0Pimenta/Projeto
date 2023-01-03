@@ -1,17 +1,19 @@
 body {
+    background-image: url('/image/thumb-1920-613663.png');
     background-size: cover;
     height: 100vh;
-    background: url(/image/thumb-1920-613663.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
-
-.stats {
-    background-color: rgb(26, 67, 129);
+  }
+  
+  .stats {
     position: absolute;
     top: 50%;
     left: 50%;
     width: 800px;
     height: 400px;
-    transform: translate(-50%,-50%);
-}
+    transform: translate(-50%, -50%);
+    background-color: #1A4381;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  

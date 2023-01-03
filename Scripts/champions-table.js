@@ -1,18 +1,16 @@
-// Define a sua chave de API da Riot Games
 const API_KEY = 'RGAPI-5afe2c63-d9bb-4420-9f38-ab92891144ca';
 
-// Cria um pedido HTTP para obter a lista de campeões
 fetch(`http://ddragon.leagueoflegends.com/cdn/12.23.1/data/en_US/champion.json`)
-  .then(response => response.json()) // processa a resposta como JSON
+  .then(response => response.json())
   .then(data => {
-    // Processa a lista de campeões
     const champions = data.data;
-
-    // Cria a tabela HTML
     const table = document.createElement('table');
 
-    // Cria o cabeçalho da tabela
     const headerRow = document.createElement('tr');
+    const imageHeader = document.createElement('th');
+    imageHeader.textContent = 'Imagem';
+    imageHeader.width = 50;
+    headerRow.appendChild(imageHeader);
     const nameHeader = document.createElement('th');
     nameHeader.textContent = 'Nome';
     headerRow.appendChild(nameHeader);
@@ -21,9 +19,17 @@ fetch(`http://ddragon.leagueoflegends.com/cdn/12.23.1/data/en_US/champion.json`)
     headerRow.appendChild(roleHeader);
     table.appendChild(headerRow);
 
-    // Adiciona cada campeão à tabela
     for (const [id, champion] of Object.entries(champions)) {
       const row = document.createElement('tr');
+      const imageCell = document.createElement('td');
+      const image = document.createElement('img');
+      image.src = `http://ddragon.leagueoflegends.com/cdn/12.23.1/img/champion/${id}.png`;
+      image.alt = champion.name;
+      image.title = champion.name;
+      image.width = 50;
+      image.height = 50;
+      imageCell.appendChild(image);
+      row.appendChild(imageCell);
       const nameCell = document.createElement('td');
       nameCell.textContent = champion.name;
       row.appendChild(nameCell);
@@ -33,7 +39,6 @@ fetch(`http://ddragon.leagueoflegends.com/cdn/12.23.1/data/en_US/champion.json`)
       table.appendChild(row);
     }
 
-    // Adiciona a tabela ao documento HTML
     document.body.appendChild(table);
   })
-  .catch(error => console.error('Erro ao obter a lista de campeões:', error)); // exibe um erro em caso de falha
+  .catch(error => console.error('Erro ao obter a lista de campeões:', error));
