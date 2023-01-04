@@ -1,4 +1,4 @@
-let key = "?api_key=RGAPI-78dd43dc-871b-493d-a090-a269f1c29793";
+let key = "?api_key=RGAPI-91ab67dd-0065-4709-a473-3d0b3c6caf56";
 let urlAPIStats = "https://euw1.api.riotgames.com/lol/league/v4/entries/by-summoner/";
 let urlApiMasteries = "https://euw1.api.riotgames.com/lol/champion-mastery/v4/champion-masteries/by-summoner/";
 let urlFinishStats = urlAPIStats + localStorage.getItem("id") + key;

@@ -1,4 +1,4 @@
-const API_KEY = 'RGAPI-5afe2c63-d9bb-4420-9f38-ab92891144ca';
+const API_KEY = 'RGAPI-9715366d-7c8b-4b1e-b5d6-0bd5cb480673';
 
 fetch(`http://ddragon.leagueoflegends.com/cdn/12.23.1/data/en_US/champion.json`)
   .then(response => response.json())
