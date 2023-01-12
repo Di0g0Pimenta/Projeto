@@ -4,8 +4,8 @@
   }
   
   a {
-    color: white;
-    text-decoration: none;
+    color: white !important;
+    text-decoration: none !important;
     transition: 0.3s;
   }
   

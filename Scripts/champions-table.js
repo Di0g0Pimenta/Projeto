@@ -1,6 +1,6 @@
 // Faz uma chamada à API de campeões do League of Legends
 fetch(`http://ddragon.leagueoflegends.com/cdn/12.23.1/data/en_US/champion.json`)
-  .then(response => response.json()) // Converte a resposta em JSON
+  .then(response => response.json())
   .then(data => {
     // Armazena os campeões em uma variável
     const champions = data.data;
