@@ -1,19 +1,32 @@
 body {
-    background-image: url('/image/thumb-1920-613663.png');
-    background-size: cover;
-    height: 100vh;
-  }
+  background-image: url('/image/thumb-1920-613663.png');
+  background-size: cover;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  margin: auto;
+  background-color: white;
+  width: 50%;
+  height: 30%;
+}
+
+#IconID img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+#IconTier img {
   
-  .stats {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 800px;
-    height: 400px;
-    transform: translate(-50%, -50%);
-    background-color: #1A4381;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-  }
-  
+  width: 90px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
