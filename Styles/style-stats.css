@@ -11,9 +11,22 @@ main {
 
 table {
   margin: auto;
-  background-color: white;
+  background-color: #1F2428;
   width: 50%;
   height: 30%;
+}
+
+td {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: x-large;
+  color: white;
+}
+
+
+
+#nickName {
+  font-size: xx-large;
+  font-weight: bold;
 }
 
 #IconID img {
@@ -23,10 +36,36 @@ table {
   display: flex;
   justify-content: center;
 }
+
 #IconTier img {
-  
   width: 90px;
   height: 100px;
   display: flex;
   justify-content: center;
 }
+
+.semi-donut {
+  width: 200px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.semi-donut:after {
+  content: '';
+  width: 200px;
+  height: 200px;
+  border: 50px solid;
+  border-color: blue blue var(--fill) var(--fill);
+  position: absolute;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  transform: rotate(calc(1deg * (-45 + var(--percentage) * 1.8)));
+  animation: fillAnimation 1s ease-in;
+}
+

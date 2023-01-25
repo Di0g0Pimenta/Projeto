@@ -1,5 +1,5 @@
 // Armazena a chave da API e a URL da API de invocadores
-let key = "?api_key=RGAPI-91b72cf1-5439-46d2-bfb3-71f008c5af20";
+let key = "?api_key=RGAPI-1d252bd7-5cbb-4a88-a5b5-0c603e798f87";
 let urlAPI = "https://euw1.api.riotgames.com/lol/summoner/v4/summoners/by-name/";
 
 // Armazena os elementos do formulário e do campo de entrada de nome de invocador
@@ -22,13 +22,13 @@ function submition(e) {
         .then(response => response.json())
         .then(response => {
             // Redireciona para a página de estatísticas e armazena as informações do invocador no armazenamento local
-            location.href = "http://127.0.0.1:5500/Stats%20Page/index-stats.html" /*+ "?name=" + sumenerName.value.toLowerCase()*/;
+            location.href = "http://127.0.0.1:5500/Pages/index-stats.html";
             localStorage.setItem("name", response.name)
             localStorage.setItem("level", response.summonerLevel)
             localStorage.setItem("icon", response.profileIconId)
             localStorage.setItem("id", response.id)
 
-            
+
         })
         // Exibe uma mensagem de erro se ocorrer um erro ao fazer a chamada à API
         .catch(error => {

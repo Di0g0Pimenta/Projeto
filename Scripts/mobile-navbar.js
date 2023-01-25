@@ -17,13 +17,12 @@ class MobileNavbar {
       // Verifica se o estilo de animação já está definido no link
       link.style.animation
         ? (link.style.animation = "") // Se sim, remove a animação
-        : (link.style.animation = `navLinkFade 0.5s ease forwards ${
-            index / 7 + 0.3
+        : (link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3
           }s`); // Se não, adiciona uma animação de "navLinkFade"
     });
   }
-   // Função para manipular o evento click no menu móvel
-   handleClick() {
+  // Função para manipular o evento click no menu móvel
+  handleClick() {
     // Adiciona ou remove a classe "ativa" da lista de links e do menu móvel
     this.navList.classList.toggle(this.activeClass);
     this.mobileMenu.classList.toggle(this.activeClass);

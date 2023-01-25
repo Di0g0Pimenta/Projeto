@@ -1,5 +1,5 @@
 // Armazena a chave da API e as URLs da API de estatísticas e mestria de campeão
-let key = "?api_key=RGAPI-91b72cf1-5439-46d2-bfb3-71f008c5af20";
+let key = "?api_key=RGAPI-1d252bd7-5cbb-4a88-a5b5-0c603e798f87";
 let urlAPIStats = "https://euw1.api.riotgames.com/lol/league/v4/entries/by-summoner/";
 let urlApiMasteries = "https://euw1.api.riotgames.com/lol/champion-mastery/v4/champion-masteries/by-summoner/";
 
@@ -20,7 +20,12 @@ fetch(urlFinishStats)
 		document.getElementById("tier").innerHTML = response[0].tier;
 		//document.getElementById("wins").innerHTML = response[0].wins;
 		//document.getElementById("losses").innerHTML = response[0].losses;
-		//document.getElementById("winRate").innerHTML = ((response[0].wins / (response[0].wins + response[0].losses)) * 100).toFixed(1) + "%";
+		document.getElementById("myChart").innerHTML = ((response[0].wins / (response[0].wins + response[0].losses)) * 100).toFixed(1) + "%";
+
+		var total = response[0].wins + response[0].losses;
+		//var winPercentage = (response[0].wins / total) * 100;
+		var lossPercentage = (response[0].losses / total) * 100;
+		document.getElementById("myChart").style.setProperty("--percentage", "WR: " + lossPercentage + "%");
 
 		switch (response[0].tier) {
 			case "BRONZE":
@@ -73,12 +78,9 @@ fetch(urlFinishStats)
 					}
 					// Se o ID do campeão atual corresponder ao ID armazenado no armazenamento local, atualiza o elemento da página com o nome do campeão
 					if (value.key == localStorage.getItem("championId")) {
-						document.getElementById("championMasteries").innerHTML = '<a href="../Masteries-champions-stats/Masteries-champions-stats.html" id="championMasteries" style="color: black !important;">' + value.name + '</a>';
+						document.getElementById("championMasteries").innerHTML = '<a href="../Pages/Masteries-champions-stats.html" id="championMasteries" style="color: black !important;">' + value.name + '</a>';
 						localStorage.setItem("championName", value.name)
-						// Set the champion's image source
-						//document.getElementById("champion-img").src = "http://ddragon.leagueoflegends.com/cdn/12.23.1/img/champion/" + value.image.full;
 					}
-
 				}
 			});
 
@@ -130,7 +132,6 @@ fetch(urlFinishStats)
 						localStorage.setItem("range", response[i].range);
 					}
 				}
-
 			})
 			.catch(err => console.error(err));
 	})

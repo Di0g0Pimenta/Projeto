@@ -19,3 +19,9 @@ document.getElementById("mana_regen").innerHTML = localStorage.getItem("mana_reg
 document.getElementById("mana_regen_gain_per_lvl").innerHTML = localStorage.getItem("mana_regen_gain_per_lvl");
 document.getElementById("movement_speed").innerHTML = localStorage.getItem("movement_speed");
 document.getElementById("range").innerHTML = localStorage.getItem("range");
+
+let championName = localStorage.getItem("championName");
+let formattedChampionName = championName.replace(/[^a-zA-Z ]/g, "").split(" ").map(name => name.charAt(0).toUpperCase() + name.substring(1)).join("");
+let championImgUrl = `http://ddragon.leagueoflegends.com/cdn/img/champion/loading/${formattedChampionName}_0.jpg`;
+document.getElementById("championImg").src = championImgUrl;
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Styles/style-navbar.css">
+    <link rel="stylesheet" href="/Styles/Champion-info.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="http://127.0.0.1:5500/index-main.html">LoLStats</a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="http://127.0.0.1:5500/index-main.html">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/Pages/index-tierlist.html">Tier List</a></li>
+                <li><a href="http://127.0.0.1:5500/Pages/index-about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container" style="overflow: hidden;">
+        <div class="row">
+            <div class="col-6">
+                <img id="championImg" src="" style="width: 100%; height: 100%; object-fit: cover">
+            </div>
+            <div class="col-6">
+                <div id="champion-info">
+                    <img id="championImg" src="">
+                    <p>Ability Haste: <span id="ability_haste"></span></p>
+                    <p>Ability Power: <span id="ability_power"></span></p>
+                    <p>Armor: <span id="armor"></span></p>
+                    <p>Armor Gain Per Level: <span id="armor_gain_per_lvl"></span></p>
+                    <p>Attack Damage: <span id="attack_damage"></span></p>
+                    <p>Attack Damage Gain Per Level: <span id="attack_damage_gain_per_lvl"></span></p>
+                    <p>Attack Speed: <span id="attack_speed"></span></p>
+                    <p>Attack Speed Gain Per Level: <span id="attack_speed_gain_per_lvl"></span></p>
+                    <p>Crit: <span id="crit"></span></p>
+                    <p>Hit Points: <span id="hp"></span></p>
+                    <p>Hit Point Gain Per Level: <span id="hp_gain_per_lvl"></span></p>
+                    <p>Hit Point Regeneration: <span id="hp_regen"></span></p>
+                    <p>Hit Point Regeneration Gain Per Level: <span id="hp_regen_gain_per_lvl"></span></p>
+                    <p>Magic Resistance: <span id="magic_resist"></span></p>
+                    <p>Magic Resistance Gain Per Level: <span id="magic_resist_gain_per_lvl"></span></p>
+                    <p>Mana: <span id="mana"></span></p>
+                    <p>Mana Gain Per Level: <span id="mana_gain_per_lvl"></span></p>
+                    <p>Mana Regeneration: <span id="mana_regen"></span></p>
+                    <p>Mana Regeneration Gain Per Level: <span id="mana_regen_gain_per_lvl"></span></p>
+                    <p>Movement Speed: <span id="movement_speed"></span></p>
+                    <p>Range: <span id="range"></span></p>
+                </div>
+            </div>
+        </div>
+    <script src="/Scripts/champion-stats.js"></script>
+    <script src="/Scripts/LoLStats.js"></script>
+    <script src="/Scripts/mobile-navbar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+</body>
+</html>
+

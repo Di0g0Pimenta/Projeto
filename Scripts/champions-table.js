@@ -63,3 +63,5 @@ fetch(`http://ddragon.leagueoflegends.com/cdn/12.23.1/data/en_US/champion.json`)
     document.body.appendChild(table);
   })
   .catch(error => console.error('Erro ao obter a lista de campeões:', error));
+
+  
