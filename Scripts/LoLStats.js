@@ -1,5 +1,5 @@
 // Armazena a chave da API e as URLs da API de estatísticas e mestria de campeão
-let key = "?api_key=RGAPI-1d252bd7-5cbb-4a88-a5b5-0c603e798f87";
+let key = "?api_key=RGAPI-9a26c853-ea19-4720-9705-293f4fbb43bd";
 let urlAPIStats = "https://euw1.api.riotgames.com/lol/league/v4/entries/by-summoner/";
 let urlApiMasteries = "https://euw1.api.riotgames.com/lol/champion-mastery/v4/champion-masteries/by-summoner/";
 

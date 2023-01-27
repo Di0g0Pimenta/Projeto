@@ -1,5 +1,5 @@
 // Armazena a chave da API e a URL da API de invocadores
-let key = "?api_key=RGAPI-1d252bd7-5cbb-4a88-a5b5-0c603e798f87";
+let key = "?api_key=RGAPI-9a26c853-ea19-4720-9705-293f4fbb43bd";
 let urlAPI = "https://euw1.api.riotgames.com/lol/summoner/v4/summoners/by-name/";
 
 // Armazena os elementos do formulário e do campo de entrada de nome de invocador
